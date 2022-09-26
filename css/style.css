@@ -1,0 +1,179 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+
+:root{
+
+	--azul-claro: #2A7AE4;
+	--branco: #FFFFFF;
+	--cinza-escuro: #464646;
+	}
+
+
+.cabecalho{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+input[type="search"] {
+    display: none;
+}
+
+.botao__login{
+	border: 1px solid var(--azul-claro);
+	width: 133px;
+	height: 40px;
+	padding: 12px 16px;
+	color: var(--azul-claro);
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.botao__login:hover{
+	cursor: pointer;
+	color: var(--branco);
+	background-color: var(--azul-claro);
+}
+
+.banner__principal--img{
+	width: 360px;
+	height: 192px;
+	padding: 16px;
+}
+
+.banner__principal--titulo{
+	margin-top: -125px;
+	margin-left: 30px;
+	color: var(--branco);
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	
+}
+
+.banner__principal--paragrafo{
+	margin-left: 30px;
+	color: var(--branco);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.banner__principal--botao{
+	width: 119px;
+	height: 40px;
+	background-color: var(--azul-claro);
+	color: var(--branco);
+	border: none;
+	padding: 12px 16px;
+	margin-left: 30px;
+	margin-top: 5px;
+	font-weight: 600;
+}
+
+.banner__principal--botao:hover{
+	cursor: pointer;
+	color: var(--azul-claro);
+	background-color: var(--branco);
+}
+
+.titulo__link{
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.titulo__link--titulo{
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: var(--cinza-escuro);
+	margin-left: 35px;
+}
+
+.titulo__link--link{
+	text-decoration: none;
+	font-weight: 700;
+	line-height: 16px;
+	color: var(--azul-claro);
+	margin-right: 10px;
+}
+
+.titulo__link--link:hover{
+	cursor: pointer;
+	color: var(--cinza-escuro);
+}
+
+.titulo__link--img{
+	padding: 0 5px;
+}
+
+.produtos__destaque, 
+.console__destaque,
+.diversos__destaque{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-left: 35px;
+
+}
+
+.produtos__destaques--container,
+.console__destaques--container,
+.diversos__destaques--container{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.produtos__destaque--img1,
+.console__destaque--img1,
+.diversos__destaque--img1{
+	grid-column: 2;
+	grid-row: 1;
+
+}
+
+.produtos__destaque--img2,
+.console__destaque--img2,{
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.produtos__destaque--img3,
+.console__destaque--img3,
+.diversos__destaque--img3{
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.produtos__destaque--titulo,
+.console__destaque--titulo,
+.diversos__destaque--titulo{
+	font-weight: 500;
+	line-height: 16px;
+	color: var(--cinza-escuro);
+	padding: 5px 0; 
+}
+
+.produtos__destaque--preco,
+.console__destaque--preco,
+.diversos__destaque--preco{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--cinza-escuro);
+
+}
+
+.produtos__destaque--link,
+.console__destaque--link,
+.diversos__destaque--link{
+	font-weight: 700;
+	line-height: 16px;
+	color: var(--azul-claro);
+	text-decoration: none;
+}
+
