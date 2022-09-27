@@ -8,6 +8,10 @@ body{
 	--azul-claro: #2A7AE4;
 	--branco: #FFFFFF;
 	--cinza-escuro: #464646;
+	--azul-claríssimo: #EAF2FD;
+	--cinza-claro: #C8C8C8;
+	--cinza-claríssimo:#A2A2A2;
+
 	}
 
 
@@ -79,6 +83,8 @@ input[type="search"] {
 	color: var(--azul-claro);
 	background-color: var(--branco);
 }
+
+
 
 .titulo__link{
 	display: flex;
@@ -177,3 +183,115 @@ input[type="search"] {
 	text-decoration: none;
 }
 
+.rodape{
+	margin-top: 10px;
+	background-color: var(--azul-claríssimo);
+
+
+}
+
+
+
+.rodape__logo{
+	margin-left: 120px;
+	width: 176px;
+	height: 50px;
+}
+
+.rodape__nav{
+	text-align: center;
+
+
+}
+.rodape__link{
+	list-style: none;
+	text-decoration: none;
+	line-height: 30px;
+	color: var(--cinza-escuro);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.rodape__form{
+	margin-top: 15px;
+}
+
+.rodape__form--titulo{
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--cinza-escuro);
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+.rodape__form--input,
+.rodape__form--msg{
+	width: 90%;
+	padding: 5px 5px;
+	display: inline-block;
+	border: 0; 
+	border-bottom: 1px solid var(--cinza-claro);
+	outline: none;
+	min-width: 180px;
+	font-size: 16px;
+	transition: all .3s ease-out;
+	border-radius: 0;
+	color: var(--cinza-escuro);
+	margin-left: 20px;
+}
+
+.rodape__form--input::placeholder{
+	color: var(--cinza-escuro);
+}
+
+
+.rodape__form--input:focus + label{
+	font-size: 12px;
+	margin-top: 0;
+}
+
+.rodape__form--label-float{
+	position: relative;
+	padding-top: 13px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 20px;
+}
+
+.rodape__form--label{
+	pointer-events: none;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	transition: all .3s ease-out;
+	margin-left: 25px;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--cinza-claríssimo);
+}
+
+
+.rodape__form--botao{
+	width: 151px;
+	height: 40px;
+	background-color: var(--azul-claro);
+	color: var(--branco);
+	border: none;
+	padding: 12px 16px;
+	margin-left: 30px;
+	margin-top: 5px;
+	font-weight: 600;
+}
+
+.rodape__form--botao:hover{
+	cursor: pointer;
+	color: var(--azul-claro);
+	background-color: var(--branco);
+}
+
+.desenvolvido{
+	font-weight: 500;
+	color: var(--cinza-escuro);
+	margin-top: 30px;
+	text-align: center;
+}
