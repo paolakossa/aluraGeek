@@ -27,7 +27,7 @@ body{
     display: none;
 }
 
-.botao__login{
+.botao__login {
 	border: 1px solid var(--azul-claro);
 	width: 133px;
 	height: 40px;
@@ -421,6 +421,111 @@ body{
 
 }
 
+.botao__admin{
+	border: 1px solid var(--azul-claro);
+	width: 134px;
+	height: 40px;
+	padding: 12px 16px;
+	color: var(--azul-claro);
+	font-weight: 600;
+	font-size: 10px;
+	background-color: var(--branco);
+
+}
+
+.adicionar__form{
+	margin-top: 15px;
+}
+
+.adicionar__form--titulo{
+	font-weight: 700;
+	font-size: 22px;
+	color: var(--cinza-escuro);
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.adicionar__form--input{
+	width: 90%;
+	padding: 5px 5px;
+	display: inline-block;
+	border: 0; 
+	border-bottom: 1px solid var(--cinza-claro);
+	outline: none;
+	min-width: 180px;
+	font-size: 16px;
+	transition: all .3s ease-out;
+	border-radius: 0;
+	color: var(--cinza-escuro);
+	margin-left: 20px;
+}
+
+.adicionar__form--msg{
+	width: 90%;
+	padding: 5px 5px;
+	display: inline-block;
+	border: 0; 
+	outline: none;
+	min-width: 180px;
+	font-size: 16px;
+	transition: all .3s ease-out;
+	border-radius: 0;
+	color: var(--cinza-escuro);
+	margin-left: 20px;
+}
+
+.adicionar__form--input::placeholder{
+	color: var(--cinza-escuro);
+}
+
+
+.adicionar__form--input:focus + label{
+	font-size: 12px;
+	margin-top: 0;
+}
+
+.adicionar__form--label-float{
+	position: relative;
+	padding-top: 13px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 20px;
+}
+
+.adicionar__form--label{
+	pointer-events: none;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	transition: all .3s ease-out;
+	margin-left: 25px;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--cinza-claríssimo);
+}
+
+
+.adicionar__form--botao{
+	width: 328px;
+	height: 51px;
+	background-color: var(--azul-claro);
+	color: var(--branco);
+	border: none;
+	padding: 12px 16px;
+	margin-left: 30px;
+	margin-top: 5px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.adicionar__form--botao:hover{
+	cursor: pointer;
+	color: var(--azul-claro);
+	background-color: var(--branco);
+}
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -556,11 +661,19 @@ body{
 }
 
 
-
 .todos__produtos--img{
 	width: 164px;
 }
 
+.botao__admin{
+	order:3;
+	width: 166px;
+}
+
+.adicionar__form--botao{
+	width: 704px;
+	
+}
 
 }
 
@@ -716,6 +829,31 @@ body{
 	margin-top: 30px;
 	background-color: var(--azul-claríssimo);
 
+}
+
+.adicionar__form{
+	margin-left: 30rem;
+	margin-top: 4rem;
+}
+
+.adicionar__form--input{
+	width: 50%;
+
+	
+}
+
+.adicionar__form--titulo{
+	font-size: 32px;
+}
+
+.adicionar__form--botao{
+	width: 559px;
+	margin-bottom: 4rem;
+	
+}
+
+.botao__admin{
+	width: 181px;
 }
 
 }
