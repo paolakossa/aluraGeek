@@ -525,7 +525,57 @@ body{
 	background-color: var(--branco);
 }
 
+.banner__produto{
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
 
+}
+
+.banner__produto--titulo{
+	font-weight: 500;
+	line-height: 16px;
+	color: var(--cinza-escuro);
+	padding: 5px 0; 
+	margin-left: 1rem;
+}
+
+.banner__produto--preco{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--cinza-escuro);
+	margin-left: 1rem;
+	margin-right: 1rem;
+
+}
+
+.banner__produto--img{
+	margin-bottom: .5rem;
+}
+
+.banner__produto--texto{
+	color: var(--cinza-escuro);
+	margin-top: .5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	
+}
+
+.produtos__similares--titulo{
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--cinza-escuro);
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.produtos__similares{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
 
 @media only screen and (min-width: 768px) {
 
