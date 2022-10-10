@@ -45,8 +45,8 @@ body{
 }
 
 .banner__principal--img{
-	width: 360px;
-	height: 192px;
+	width: 90%;
+	height: 120px;
 	padding: 16px;
 }
 
@@ -260,7 +260,8 @@ body{
 	margin-left: 20px;
 }
 
-.rodape__form--label{
+.rodape__form--labelNome,
+.rodape__form--labelMsg{
 	pointer-events: none;
 	position: absolute;
 	top: 0; 
@@ -289,6 +290,12 @@ body{
 	cursor: pointer;
 	color: var(--azul-claro);
 	background-color: var(--branco);
+}
+
+.rodape__mensagem {
+	padding: 1rem;
+	font-weight: 700;
+	display: none;
 }
 
 .desenvolvido{
@@ -613,8 +620,8 @@ body{
 }
 
 .banner__principal--img{
-	width: 768px;
-	height: 352px;
+	width: 91%;
+	height: 230px;
 	padding: 32px;
 }
 
@@ -671,6 +678,11 @@ body{
 	line-height: 45px;
 
 
+}
+
+.rodape__mensagem{
+	grid-column: 2;
+	grid-row: 2;
 }
 
 .rodape__logo{
@@ -776,7 +788,7 @@ body{
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
 
 .cabecalho__logo{
 		margin-left: 100px;
@@ -791,7 +803,7 @@ body{
 }
 
 .banner__principal--img{
-	width: 1440px;
+	width: 95%;
 	height: 352px;
 	
 }
