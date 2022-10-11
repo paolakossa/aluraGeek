@@ -12,14 +12,7 @@
 
     })
 
-    /*Ir para a página de login*/
-
-    const btnLogin = document.querySelector('.botao__login'); 
-
-    btnLogin?.addEventListener('click', () => {
-    	window.location.href = 'file:///C:/Users/paola.kossa/OneDrive/Documentos/aluraGeek/login.html'
-    })
-
+    
 /*Validação do formulário de envio de mensagem*/
 
 const nome = document.querySelector('.rodape__form--input');
@@ -48,7 +41,7 @@ nome.addEventListener('keyup', () => {
 
 msg.addEventListener('keyup', () => {
 
-	if(msg.value.length <= 6 ) {
+	if(msg.value.length <= 2 ) {
 		labelMsg.setAttribute('style', 'color: #FF4A4A');
 		labelMsg.innerHTML = 'Este campo não pode estar vazio';
 		msg.setAttribute('style', 'border-color:#FF4A4A');
@@ -66,7 +59,7 @@ const msgSucesso = document.querySelector('.rodape__mensagem');
 
 btnEnviarMensagem.addEventListener('click', () => {
 
-		if(nome.value.length <= 2 && msg.value.length <= 6) {
+		if(nome.value.length <= 2 && msg.value.length <= 2) {
 			msgSucesso.setAttribute('style', 'display:none');
 			msgSucesso.innerHTML = '';
 		

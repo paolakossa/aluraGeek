@@ -23,12 +23,13 @@
 			
 			<h4 class="form__login--titulo">Iniciar Sessão</h4>
 
-			<input type="email" class="form__login--input" placeholder="Escreva o seu email" required>
-			<input type="password" class="form__login--input" placeholder="Escreva sua senha" required>
+			<input type="email" class="form__login--inputEmail" placeholder="Escreva o seu email" required>
+			<input type="password" class="form__login--inputSenha" placeholder="Escreva sua senha" required>
 			<button type="submit" class="form__login--botao">Entrar</button>
-
+			
 		</form>
 
+			<div class="mensagem__erro">Email e/ou senha incorretos. Tente novamente.</div>
 
 	<footer class="rodape">
 		<div class="rodape--nav">
@@ -62,12 +63,13 @@
         		<button type="submit" class="rodape__form--botao">Enviar mensagem</button>
     		</div>
 		</form>
-		
+		<div class="rodape__mensagem">Sua mensagem foi enviada com sucesso!</div>
 	</footer>
 
 	<p class="desenvolvido">Desenvolvido por Paola Kossa<br>2022</p>
 
 
 <script src="js/main.js"></script>
+<script src="js/iniciarSessao.js"></script>
 </body>
 </html>
