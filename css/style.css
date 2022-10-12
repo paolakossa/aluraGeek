@@ -290,6 +290,7 @@ body{
 	cursor: pointer;
 	color: var(--azul-claro);
 	background-color: var(--branco);
+	border: 1px solid var(--azul-claro);
 }
 
 .rodape__mensagem {
@@ -410,6 +411,13 @@ body{
 	font-weight: 600;
 }
 
+.todos__produtos--botao:hover{
+	background-color:var(--branco);
+	color: var(--azul-claro);
+	border: 1px solid var(--azul-claro);
+	cursor: pointer;
+}
+
 .todos__produtos{
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -424,9 +432,20 @@ body{
 }
 
 
-.icones__botao{
+.icones__botao--lixeira,
+.icones__botao--lapis{
 	background-color: transparent;
 	border: none;
+}
+
+.icones__botao--lixeira:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.icones__botao--lapis:hover{
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 .todos__produtos--img{
