@@ -466,6 +466,30 @@ body{
 
 }
 
+.produtos__destaque--inputContainer{
+	display: none;
+}
+
+.produtos__destaque--input{
+	width: 40%;
+	margin-right: .5rem;
+}
+
+.produtos__destaque--inputBtn{
+	background-color: var(--azul-claro);
+	color: var(--branco);
+	border: none;
+	width: 40%;
+	display: none;
+}
+
+.produtos__destaque--inputBtn:hover{
+	background-color: var(--branco);
+	color: var(--azul-claro);
+	border: 1px solid var(--azul-claro);
+	cursor: pointer;
+}
+
 .botao__admin{
 	border: 1px solid var(--azul-claro);
 	width: 134px;
